@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Guess the Number</h1>
+    <p>Guess a number between 1 and 360. You have 6 guesses!</p>
+    <svg id="circleChart" width="200" height="200" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="90" fill="#2f2f2f" />
+      <path id="arcPath" fill="tomato" />
+    </svg>
+    <input type="number" id="guessInput" min="1" max="100">
+    <button onclick="makeGuess()">Submit Guess</button>
+    <div class="message" id="message"></div>
+    <div class="message" id="attempts"></div>
+    <div class="guesses" id="guessList"></div>
+
+  </div>
+
+  <dialog id="gameStats">
+    <h2 id="endmessage"></h2>
+    <pre id="statsText"></pre>
+    <button onclick="restartGame()">Play Again</button>
+    <button id="resetbutton">Reset Stats (HOLD)</button>
+  </dialog>
+  
+  <script src="script.js"></script>
+</body>
+</html>

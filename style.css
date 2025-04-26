@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body { 
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+.container {
+  background: #2f2f2f;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  background-color: #4f4f4f;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  background-color: #4f4f4f;
+}
+#resetbutton{
+  transition: background-color 3s linear;
+}
+.holding{
+  background-color: red;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.guesses {
+  margin-top: 10px;
+}
+
+svg {
+  margin-top: 20px;
+}
+
+dialog {
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background: #2f2f2f;
+  width: calc(100% - 40px);
+  max-width: 25rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#confirmResetDialog {
+  padding: 20px;
+  border-radius: 10px;
+  background: #5f5f5f;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 10px;
+}
